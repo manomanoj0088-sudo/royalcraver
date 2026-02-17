@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> Royal Crave Restaurant</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  >
+  <!-- Font Awesome (Icons) -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+  <!-- CSS -->
+  <link rel="stylesheet" href="stylesheet.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="nav-left">
+      <div class="logo">
+        <span class="logo-dot">✳</span>
+        <div>
+          <h3>ROYAL CRAVE RESTAURANT</h3>
+          <p>CRAVE! CREATE! CELEBRATE!</p>
+        </div>
+      </div>
+    </div>
+    <div class="nav-right">
+    <a href="index.html" class="nav-btn">Home</a>
+    <a href="cart.html" class="nav-btn">Cart</a>
+    <a href="#about" class="nav-btn">About</a>
+    <a href="" class="nav-btn">Login</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+
+      <div class="hero-left">
+        <div class="hero-img-wrap">
+          <img src="https://thumbs.dreamstime.com/b/online-food-delivery-chicken-biryani-packed-plastic-box-restaurant-style-tikka-home-container-raita-salan-189573019.jpg"
+               alt="Biryani" class="hero-img">
+
+          <div class="floating-items">
+            <div class="small-bowl bowl-1"></div>
+            <div class="small-bowl bowl-2"></div>
+            <div class="lemon"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="price-badge">
+          <p>PRICE</p>
+          <h4>₹349</h4>
+          <span>₹399</span>
+        </div>
+
+        <h2 class="hero-script">Chicken</h2>
+        <h1 class="hero-title">Biryani</h1>
+
+        <div class="rating">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <p><b>4.5</b> <span>11521 Reviews</span></p>
+        </div>
+
+        <div class="hero-desc">
+          <b>Aromatic, soft, and tender chunks of lamb layered with rice infused with the flavors of spices.
+          The delicate blend of cardamom, cloves, and cinnamon creates a symphony of tastes in every bite🤤.</b>
+        </div>
+
+        <div class="hero-btns">
+          <button class="btn btn-primary">ORDER NOW</button>
+          <button class="btn btn-outline">EXPLORE MORE</button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- WAVE -->
+    <div class="wave">
+      <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+        <path d="M0,64L80,74.7C160,85,320,107,480,101.3C640,96,800,64,960,48C1120,32,1280,32,1360,32L1440,32L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z"></path>
+      </svg>
+    </div>
+  </section>
+
+
+  <!-- MENU SLIDER SECTION FOR NON-VEG-->
+  <section class="menu" id="nonveg-menu">
+    <h5 class="section-title">Non-Veg🍗</h5>
+    <div class="menu-inner">
+
+      <button class="slider-btn left" id="nonvegPrevBtn">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+
+      <div class="cards-wrapper" id="nonvegCardsWrapper">
+
+        <!-- CARD 1 -->
+        <article class="food-card green">
+            <img 
+            src="https://www.cubesnjuliennes.com/wp-content/uploads/2022/12/Tandoori-Chicken-Recipe.jpg"
+            alt="chicken salad"
+            class="food-img"
+            />
+            <div class="card-price">
+              <p>PRICE</p>
+              <h4>₹279</h4>
+              <span>₹300</span>
+            </div>
+              <h3 class="food-script">Chicken</h3> 
+              <h2 class="food-title">Tandoori</h2>   
+              <div class="card-rating">
+                <div class="stars small">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>    
+              </div>
+              <p>4.5</p>
+            </div>  
+
+             <p class="card-desc">
+              Smoky, tender chicken marinated in yogurt and spices, cooked to perfection in a tandoor oven...
+            </p>  
+            <button class="btn btn-dark add-to-cart" data-name="Tandoori Chicken" data-price="279" data-img="https://www.cubesnjuliennes.com/wp-content/uploads/2022/12/Tandoori-Chicken-Recipe.jpg"> ADD TO CART </button>
+        </article>
+
+        <!-- CARD 2 -->
+        <article class="food-card orange">
+          <img
+            src="https://myfoodstory.com/wp-content/uploads/2021/09/kadai-chicken-1.jpg"
+            alt="Chicken"
+            class="food-img"
+          />
+          <div class="card-price">
+            <p>PRICE</p>
+            <h4>₹169</h4>
+            <span>₹210</span>
+          </div>
+
+          <h3 class="food-script">Kadai</h3>
+          <h2 class="food-title">Chicken</h2>
+
+          <div class="card-rating">
+            <div class="stars small">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <p>4.5</p>
+          </div>
+
+          <p class="card-desc">
+            Rich gravy, Spicy tender chicken and a burst of spices cooked in a traditional kadai style...
+          </p>
+
+          <button class="btn btn-dark add-to-cart" data-name="Kadai Chicken" data-price="169" data-img="https://myfoodstory.com/wp-content/uploads/2021/09/kadai-chicken-1.jpg">ADD TO CART</button>
+        </article>
+
+        <!-- CARD 3 -->
+        <article class="food-card green">
+          <img
+            src="https://www.easycookingwithmolly.com/wp-content/uploads/2021/04/easy-indian-chilli-chicken-recipe-dry.jpg"
+            alt="Paneer"
+            class="food-img"
+          />
+          <div class="card-price">
+            <p>PRICE</p>
+            <h4>₹129</h4>
+            <span>₹169</span>
+          </div>
+
+          <h3 class="food-script">Chilli Chicken</h3>
+          <h2 class="food-title">Gravy</h2>
+
+          <div class="card-rating">
+            <div class="stars small">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <p>4.5</p>
+          </div>
+
+          <p class="card-desc">
+            Creamy spinach base with soft paneer cubes, perfectly balanced with mild spices...
+          </p>
+          <button class="btn btn-dark add-to-cart" data-name="Chilli Chicken Gravy" data-price="129" data-img="https://www.easycookingwithmolly.com/wp-content/uploads/2021/04/easy-indian-chilli-chicken-recipe-dry.jpg"> ADD TO CART </button>
+        </article>
+
+        <!-- CARD 4 -->
+        <article class="food-card orange">
+            <img
+              src="https://theartisticcook.com/wp-content/uploads/2023/06/muttonkorma-latest1-1.jpg"
+              alt="Chicken"
+              class="food-img"
+            />
+            <div class="card-price">
+              <p>PRICE</p>
+              <h4>₹179</h4>
+              <span>₹199</span> 
+            </div>
+
+            <h3 class="food-script">Mutton</h3>
+            <h2 class="food-title">Korma</h2>
+            <div class="card-rating">
+              <div class="stars small">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>    
+            </div>
+            <p>4</p>
+         </div>
+         <p class="card-desc">
+            Rich gravy, tender mutton and a burst of spices cooked in a traditional korma style...
+          </p>
+          <button class="btn btn-dark add-to-cart" data-name="Mutton Korma" data-price="179" data-img="https://theartisticcook.com/wp-content/uploads/2023/06/muttonkorma-latest1-1.jpg"> ADD TO CART </button>
+        </article>
+        <!-- CARD 5 -->
+        <article class="food-card green">
+          <img
+            src="https://i.pinimg.com/736x/63/6c/32/636c328bd4d0c7acc54b3785e74b796b.jpg"
+            alt="Paneer"
+            class="food-img"
+          />
+          <div class="card-price">
+            <p>PRICE</p>
+            <h4>₹169</h4>
+            <span>₹220</span>   
+          </div>
+            <h3 class="food-script">Malai</h3> 
+            <h2 class="food-title">Chicken</h2>
+            <div class="card-rating">
+              <div class="stars small">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>    
+            </div>
+            <p>4.5</p>
+          </div>
+
+          <p class="card-desc">
+            Creamy malai chicken with tender chicken pieces, perfectly balanced with mild spices...
+          </p>
+
+          <button class="btn btn-dark add-to-cart" data-name="Malai Chicken" data-price="169" data-img="https://i.pinimg.com/736x/63/6c/32/636c328bd4d0c7acc54b3785e74b796b.jpg"> ADD TO CART </button>
+        </article>
+        <!-- CARD 5-->
+        <article class="food-card orange">
+          <img 
+          src="https://www.licious.in/blog/wp-content/uploads/2022/08/shutterstock_1007584870.jpg"
+          alt="chicken salad"
+          class="food-img"
+          />
+          <div class="card-price">
+            <p>PRICE</p>
+            <h4>₹149</h4>
+            <span>₹199</span>
+          </div>
+            <h3 class="food-script">Chicken</h3> 
+            <h2 class="food-title">salad</h2>
+            <div class="card-rating">
+              <div class="stars small">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>    
+            </div>
+            <p>4.5</p>
+          </div>
+
+          <p class="card-desc">
+            Creamy butter masala with soft paneer cubes, perfectly balanced with mild spices...
+          </p>
+
+          <button class="btn btn-dark add-to-cart" data-name="Paneer Butter Masala" data-price="129" data-img="https://myfoodstory.com/wp-content/uploads/2021/07/restaurant-style-paneer-butter-masala-2-500x500.jpg"> ADD TO CART </button>
+        </article>
+        <!-- Card 6 -->
+        <article class="food-card green">
+          <img 
+          src="https://5.imimg.com/data5/ECOM/Default/2024/2/383889520/ML/JS/WV/30496816/1707135193849-sku-3272-0.jpg"
+          alt="chicken salad"
+          class="food-img"
+          />
+          <div class="card-price">
+            <p>PRICE</p>
+            <h4>₹199</h4>
+            <span>₹249</span>
+          </div>  
+            <h3 class="food-script">Chicken</h3> 
+            <h2 class="food-title">Lolipop</h2>
+            <div class="card-rating">   
+              <div class="stars small">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>  
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <p>4.5</p>
+          </div>
+          <p class="card-desc">
+            Crispy chicken lollipops tossed in spicy Indo-Chinese sauce and seasionings with garlic flavor...
+          </p>
+          <button class="btn btn-dark add-to-cart" data-name="Chicken Lollipop" data-price="199" data-img="https://5.imimg.com/data5/ECOM/Default/2024/2/383889520/ML/JS/WV/30496816/1707135193849-sku-3272-0.jpg"> ADD TO CART </button>
+        </article>
+      </div>
+
+      <button class="slider-btn right" id="nonvegNextBtn">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+      </div>
+  </section>
+    </div>
+    <!-- MENU SLIDER SECTION FOR VEG -->
+    <section class="menu" id="veg-menu">
+    <h2 class="section-title">Veg 🥗</h2>
+    <div class="menu-inner"> 
+
+    <button class="slider-btn left" id="vegPrevBtn">
+      <i class="fa-solid fa-chevron-left"></i>
+    </button>
+
+    <div class="cards-wrapper" id="vegCardsWrapper">
+
+      <!-- VEG CARD 1 -->
+      <article class="food-card green">
+        <img
+          src="https://myfoodstory.com/wp-content/uploads/2021/07/restaurant-style-paneer-butter-masala-2-500x500.jpg"
+          alt="Paneer Butter Masala"
+          class="food-img"
+        />
+        <div class="card-price">
+          <p>PRICE</p>
+          <h4>₹129</h4>
+          <span>₹169</span>
+        </div>
+
+        <h3 class="food-script">Paneer</h3>
+        <h2 class="food-title">Butter Masala</h2>
+
+        <div class="card-rating">
+          <div class="stars small">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <p>4.6</p>
+        </div>
+
+        <p class="card-desc">
+          Creamy tomato gravy with soft paneer cubes, rich buttery taste and mild spices...
+        </p>
+
+        <button class="btn btn-dark add-to-cart" data-name="Paneer Butter Masala" data-price="129" data-img="https://myfoodstory.com/wp-content/uploads/2021/07/restaurant-style-paneer-butter-masala-2-500x500.jpg"> ADD TO CART </button>
+      </article>
+
+      <!-- VEG CARD 2 -->
+      <article class="food-card orange">
+        <img
+          src="https://www.cookingcarnival.com/wp-content/uploads/2025/09/Vegetable-Dum-Biryani-5.jpg"
+          alt="Veg Biryani"
+          class="food-img"
+        />
+        <div class="card-price">
+          <p>PRICE</p>
+          <h4>₹129</h4>
+          <span>₹169</span>
+        </div>
+
+        <h3 class="food-script">Veg</h3>
+        <h2 class="food-title">Biryani</h2>
+
+        <div class="card-rating">
+          <div class="stars small">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <p>4.4</p>
+        </div>
+
+        <p class="card-desc">
+          Aromatic basmati rice cooked with fresh vegetables, herbs and spices...
+        </p>
+
+        <button class="btn btn-dark add-to-cart" data-name="Veg Biryani" data-price="129" data-img="https://www.cookingcarnival.com/wp-content/uploads/2025/09/Vegetable-Dum-Biryani-5.jpg"> ADD TO CART </button>
+      </article>
+
+      <!-- VEG CARD 3 -->
+      <article class="food-card green">
+        <img
+          src="https://theyummydelights.com/wp-content/uploads/2020/02/gobi-manchurian-8.jpg"
+          alt="Gobi Manchurian"
+          class="food-img"
+        />
+        <div class="card-price">
+          <p>PRICE</p>
+          <h4>₹169</h4>
+          <span>₹249</span>
+        </div>
+
+        <h3 class="food-script">Gobi</h3>
+        <h2 class="food-title">Manchurian</h2>
+
+        <div class="card-rating">
+          <div class="stars small">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <p>4.5</p>
+        </div>
+
+        <p class="card-desc">
+          Crispy cauliflower tossed in spicy Indo-Chinese sauce with garlic flavor...
+        </p>
+
+        <button class="btn btn-dark add-to-cart" data-name="Gobi Manchurian" data-price="169" data-img="https://theyummydelights.com/wp-content/uploads/2020/02/gobi-manchurian-8.jpg"> ADD TO CART </button>
+      </article>
+
+      <!-- VEG CARD 4 -->
+      <article class="food-card orange">
+        <img
+          src="https://www.indianhealthyrecipes.com/wp-content/uploads/2021/04/dal-tadka-recipe-500x500.jpg"
+          alt="Dal Tadka"
+          class="food-img"
+        />
+        <div class="card-price">
+          <p>PRICE</p>
+          <h4>₹129</h4>
+          <span>₹169</span>
+        </div>
+
+        <h3 class="food-script">Dal</h3>
+        <h2 class="food-title">Tadka</h2>
+
+        <div class="card-rating">
+          <div class="stars small">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <p>4.3</p>
+        </div>
+
+        <p class="card-desc">
+          Yellow lentils tempered with ghee, garlic, cumin and mild spices...
+        </p>
+        <button class="btn btn-dark add-to-cart" data-name="Dal Tadka" data-price="129" data-img="https://www.indianhealthyrecipes.com/wp-content/uploads/2021/04/dal-tadka-recipe-500x500.jpg"> ADD TO CART </button>
+        
+      </article>
+    </div>
+
+    <button class="slider-btn right" id="vegNextBtn">
+      <i class="fa-solid fa-chevron-right"></i>
+    </button>
+
+  </div>
+</section>
+<!-- MENU SLIDER SECTION FOR DESSERT-->
+ <section class="menu" id="desert-menu">
+    <h5 class="section-title">Desserts🍰</h5>
+    <div class="menu-inner">
+
+      <button class="slider-btn left" id="dessertPrevBtn">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+
+      <div class="cards-wrapper" id="dessertCardsWrapper">
+        <!-- CARD 1 -->
+        <article class="food-card green">
+            <img 
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvTePxEBun1KoBh5bk0ucF015vJVF1yiDa-g&s"
+            alt="chicken salad"
+            class="food-img"
+            />
+            <div class="card-price">
+              <p>PRICE</p>
+              <h4>₹279</h4>
+              <span>₹349</span>
+            </div>
+              <h3 class="food-script">Tiramisu</h3>  
+              <h2 class="food-title">Affogato</h2>
+              <div class="card-rating">
+                <div class="stars small">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>    
+              </div>
+              <p>4.5</p>
+            </div>
+              <p class="card-desc">
+                Smoky, tender chicken marinated in yogurt and spices, cooked to perfection in a tandoor oven... 
+              </p>
+              <button class="btn btn-dark add-to-cart" data-name="Tiramisu Affogato" data-price="279" data-img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvTePxEBun1KoBh5bk0ucF015vJVF1yiDa-g&s"> ADD TO CART </button>
+        </article>
+        <!-- CARD 2 -->
+        <article class="food-card orange">
+            <img
+              src="https://www.melskitchencafe.com/wp-content/uploads/2023/01/updated-lava-cakes7.jpg"
+              alt="Chicken"
+              class="food-img"
+            />
+            <div class="card-price">
+              <p>PRICE</p>
+              <h4>₹169</h4>
+              <span>₹249</span>
+            </div>
+            <h3 class="food-script">Chocolate</h3>
+            <h2 class="food-title">Lava Cake</h2>
+            <div class="card-rating">
+              <div class="stars small">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>  
+              </div>
+              <p>4.5</p>
+              </div>
+              <p class="card-desc">
+                Rich chocolate cake with a gooey molten center, served warm with vanilla ice cream...
+              </p>
+              <button class="btn btn-dark add-to-cart" data-name="Chocolate Lava Cake" data-price="169" data-img="https://www.melskitchencafe.com/wp-content/uploads/2023/01/updated-lava-cakes7.jpg"> ADD TO CART </button>
+            </article>
+        
+        <!-- CARD 3 -->
+        <article class="food-card green">
+            <img
+              src="https://eatsbyramya.com/wp-content/uploads/2024/10/rasmalai_can_recipe.jpg"
+              alt="Chocolate Lava Cake"
+              class="food-img"
+            />
+            <div class="card-price">
+              <p>PRICE</p>
+              <h4>₹169</h4>
+              <span>₹199</span>
+            </div>
+            <h3 class="food-script">Rasamalai</h3>
+            <h2 class="food-title">Sweet</h2>
+            <div class="card-rating">
+              <div class="stars small">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>  
+              </div>
+              <p>4.5</p>
+              </div>
+              <p class="card-desc">
+                Soft paneer dumplings soaked in sweetened milk, flavored with cardamom and garnished with nuts...
+              </p>
+              <button class="btn btn-dark add-to-cart" data-name="Rasmalai" data-price="169" data-img="https://eatsbyramya.com/wp-content/uploads/2024/10/rasmalai_can_recipe.jpg"> ADD TO CART </button>
+        </article>
+
+        <!-- CARD 4 -->
+        <article class="food-card orange">
+            <img
+              src="https://almondhouse.com/cdn/shop/files/1_IMG_9491_1e1968b7-b144-49ba-a4ed-2659e95a3bcb.jpg?v=1703680462"
+              alt="Chicken"
+              class="food-img"
+            />
+            <div class="card-price">
+              <p>PRICE</p>
+              <h4>₹169</h4>
+              <span>₹199</span>
+            </div>
+            <h3 class="food-script">Gulab</h3>
+            <h2 class="food-title">Jamun</h2>
+            <div class="card-rating">
+              <div class="stars small">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>  
+              </div>
+              <p>4.5</p>
+              </div>
+              <p class="card-desc">
+                Sweet, syrupy dessert made from milk solids and sugar, often served warm with a drizzle of syrup...
+              </p>
+              <button class="btn btn-dark add-to-cart" data-name="Gulab Jamun" data-price="169" data-img="https://almondhouse.com/cdn/shop/files/1_IMG_9491_1e1968b7-b144-49ba-a4ed-2659e95a3bcb.jpg?v=1703680462"/> ADD TO CART </button>
+        </article>
+      </div>
+
+      <button class="slider-btn right" id="dessertNextBtn">
+      <i class="fa-solid fa-chevron-right"></i>
+      </button>
+      </div>
+   </section>
+
+  <!-- MENU SLIDER SECTION FOR DRINKS-->
+   <section class="menu" id="drinks-menu">
+    <h5 class="section-title">Drinks🥤</h5>
+    <div class="menu-inner">
+
+      <button class="slider-btn left" id="drinksPrevBtn">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+
+      <div class="cards-wrapper" id="drinksCardsWrapper">
+        <!-- CARD 1 -->
+        <article class="food-card green">
+            <img 
+            src="https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1240w,f_auto,q_auto:best/MSNBC/Components/Photo/_new/090130-cokeclassic-hmed-8a.jpg"
+            alt="chicken salad"
+            class="food-img"
+            />
+            <div class="card-price">
+              <p>PRICE</p>
+              <h4>₹49</h4>
+              <span>₹79</span>
+            </div>
+              <h3 class="food-script">Coca</h3> 
+              <h2 class="food-title">Cola</h2>   
+              <div class="card-rating">
+                <div class="stars small">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>    
+              </div>
+              <p>4</p>
+            </div>  
+            
+             <p class="card-desc">
+              Refreshing carbonated soft drink with a sweet and tangy flavor, perfect for quenching your thirst...
+            </p>  
+            <button class="btn btn-dark add-to-cart" data-name="Coca Cola" data-price="49" data-img="https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1240w,f_auto,q_auto:best/MSNBC/Components/Photo/_new/090130-cokeclassic-hmed-8a.jpg"> ADD TO CART </button>
+        </article>
+          <!-- CARD 2 -->
+          <article class="food-card orange">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX0bFLTG2QHPpGOHQ8HQYcLAuSKwK0T3sXsg&s"
+                alt="Chicken"
+                class="food-img"
+              />
+              <div class="card-price">
+                <p>PRICE</p>
+                <h4>₹49</h4>
+                <span>₹79</span>
+              </div>
+              <h3 class="food-script">Sprite</h3>
+              <h2 class="food-title">Lemon-Lime</h2>
+              <div class="card-rating">
+                <div class="stars small">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p>4.5</p>
+              </div>
+              <p class="card-desc">
+                Crisp and refreshing lemon-lime flavored soda, perfect for cooling down on a hot day...
+              </p>
+              <button class="btn btn-dark add-to-cart" data-name="Sprite Lemon-Lime" data-price="49" data-img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX0bFLTG2QHPpGOHQ8HQYcLAuSKwK0T3sXsg&s"> ADD TO CART </button>
+
+            </article>
+            <!-- CARD 3 -->
+            <article class="food-card green">
+              <img
+                src="https://driftbasket.com/wp-content/uploads/2024/04/pepsi-BLUE-TITAN-0_33L-SRB_600_600px-e1713358658329.jpg"
+                alt="Chicken"
+                class="food-img"
+              />
+              <div class="card-price">
+                <p>PRICE</p>
+                <h4>₹49</h4>
+                <span>₹79</span>  
+              </div>
+              <h3 class="food-script">Soft drink</h3>
+              <h2 class="food-title">Pepsi</h2>
+              <div class="card-rating">
+                <div class="stars small">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p>4.5</p>
+                </div>
+                <p class="card-desc">
+                  Classic cola-flavored soft drink with a perfect balance of sweetness and fizz, ideal for any occasion...
+                </p>
+                <button class="btn btn-dark add-to-cart" data-name="Pepsi" data-price="49" data-img="https://driftbasket.com/wp-content/uploads/2024/04/pepsi-BLUE-TITAN-0_33L-SRB_600_600px-e1713358658329.jpg"> ADD TO CART </button>
+
+
+            </article>
+            <!-- CARD 4 -->
+            <article class="food-card orange">
+              <img
+                src="https://assets.upstox.com/content/assets/images/news/maaza-india-coca-cola.webp"
+                alt="Chicken"
+                class="food-img"
+              />
+              <div class="card-price">
+                <p>PRICE</p>
+                <h4>₹39</h4>
+                <span>₹49</span>  
+              </div>
+              <h3 class="food-script">Maaza</h3>
+              <h2 class="food-title">Mango drink</h2>
+              <div class="card-rating">
+                <div class="stars small">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p>4.5</p>
+              </div>
+              <p class="card-desc">
+                Sweet and tangy mango-flavored drink, perfect for cooling down on a hot day...
+              </p>
+              <button class="btn btn-dark add-to-cart" data-name="Maaza Mango drink" data-price="39" data-img="https://assets.upstox.com/content/assets/images/news/maaza-india-coca-cola.webp"> ADD TO CART </button>
+            </article>
+             <!-- CARD 5 -->
+             <article class="food-card green">
+              <img
+                src="https://bazaar5.com/image/cache/catalog/pro/product/apiData/100401175-fanta-soft-drink-orange-flavoured-refreshing-300-ml-0-320x320.jpg"
+                alt="Chicken"
+                class="food-img"
+              />
+              <div class="card-price">
+                <p>PRICE</p>
+                <h4>₹49</h4>
+                <span>₹79</span>  
+              </div>
+              <h3 class="food-script">Fanta</h3>
+              <h2 class="food-title">Orange</h2>
+              <div class="card-rating">
+                <div class="stars small">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>  
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p>4.5</p>
+              </div>
+              <p class="card-desc">
+                Fruity and refreshing orange-flavored soda, perfect for quenching your thirst...
+              </p>
+              <button class="btn btn-dark add-to-cart" data-name="Fanta Orange" data-price="49" data-img="https://bazaar5.com/image/cache/catalog/pro/product/apiData/100401175-fanta-soft-drink-orange-flavoured-refreshing-300-ml-0-320x320.jpg"> ADD TO CART </button>
+            </article>
+             <!-- CARD 6 -->
+             <article class="food-card orange">
+              <img
+                src="https://www.bbassets.com/media/uploads/p/l/412087_1-bisleri-mineral-water.jpg"
+                alt="Chicken"
+                class="food-img"
+              />  
+              <div class="card-price">
+                <p>PRICE</p>
+                <h4>₹20</h4>
+                <span>₹35</span>  
+              </div>
+              <h3 class="food-script">Water</h3>
+              <h2 class="food-title">Bottle</h2>
+              <div class="card-rating">
+                <div class="stars small">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>  
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p>4.5</p>
+              </div>
+              <p class="card-desc">
+                Pure and refreshing bottled water, perfect for staying hydrated throughout the day...
+              </p>
+              <button class="btn btn-dark add-to-cart" data-name="Water Bottle" data-price="20" data-img="https://www.bbassets.com/media/uploads/p/l/412087_1-bisleri-mineral-water.jpg"> ADD TO CART </button>
+
+            </article>
+      </div>
+      <button class="slider-btn right" id="drinksNextBtn">
+      <i class="fa-solid fa-chevron-right"></i>
+      </button>
+      </div>
+   </section>
+
+    <!-- WAVE -->
+    <div class="wave wave-bottom">
+      <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+        <path d="M0,40L80,53.3C160,67,320,93,480,96C640,99,800,80,960,69.3C1120,59,1280,56,1360,54.7L1440,53.3L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z"></path>
+      </svg>
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+
+      <div class="social">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+
+      <div class="footer-links">
+        <a href="#">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#menu">Menu</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+        <a href="#">Return Policy</a>
+      </div>
+
+      <p class="copy">
+        Copyright © 2010-2026 Restaurant. All rights reserved.
+      </p>
+
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
